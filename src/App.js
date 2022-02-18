@@ -1,15 +1,17 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import BookProvider from "./contexts/BookContext";
 import BookList from "./components/BookList";
-import ThemeContextProvider from "./contexts/ThemeContext";
+import BookForm from "./components/BookForm";
 
 function App() {
   return (
     <div className="App">
-      <ThemeContextProvider>
+      <BookProvider>
         <Navbar />
         <BookList />
-      </ThemeContextProvider>
+        <BookForm />
+      </BookProvider>
     </div>
   );
 }

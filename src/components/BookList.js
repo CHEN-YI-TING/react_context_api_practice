@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { BookContext } from "../contexts/BookContext";
+import BookDetails from "./BookDetails";
 
 function BookList() {
-  return (
+  const { books } = useContext(BookContext);
+  return books.length ? (
     <div className="book-list">
       <ul>
-        <li>麥田捕手</li>
-        <li>原子習慣</li>
-        <li>如何利用優勢創業</li>
+        {books.map((book) => {
+          return <BookDetails book={book} key={book.id} />;
+        })}
       </ul>
     </div>
+  ) : (
+    <div className="empty">目前沒有需要閱讀的清單</div>
   );
 }
 
