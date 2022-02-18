@@ -10,5 +10,5 @@ step2 再跑 **npm run start**
 
 <a href="https://www.youtube.com/watch?v=r2ssh0W8o34
 " target="_blank"><img src="src/img/youtube.jpg" 
-alt="點擊並觀看影片" width="1000" height="800" border="10" /></a>
+alt="點擊並觀看影片" /></a>
 
