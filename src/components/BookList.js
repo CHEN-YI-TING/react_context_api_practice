@@ -4,7 +4,7 @@ import BookDetails from "./BookDetails";
 
 function BookList() {
   const { books } = useContext(BookContext);
-  return books.length ? (
+  return books ? (
     <div className="book-list">
       <ul>
         {books.map((book) => {
